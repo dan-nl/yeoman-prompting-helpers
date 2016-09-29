@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/dan-nl/yeoman-prompting-helpers#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint ."
   },
   "dependencies": {
+    "eslint": "3.6.1",
+    "eslint-config-dan-nl": "git://github.com/dan-nl/eslint-config-dan-nl.git",
     "lodash.filter": "4.6.0",
     "lodash.foreach": "4.5.0"
   }

@@ -6,7 +6,7 @@
 var answers = {};
 
 /**
- * @param key
+ * @param {string} key
  * @returns {string}
  */
 function get( key ) {
