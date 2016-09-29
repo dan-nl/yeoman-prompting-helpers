@@ -1,6 +1,6 @@
 {
   "name": "yeoman-prompting-helpers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "share prompting answers with other generators",
   "author": "dan entous",
   "main": "src/index.js",
