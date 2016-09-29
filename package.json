@@ -1,0 +1,29 @@
+{
+  "name": "yeoman-prompting-helpers",
+  "version": "0.0.0",
+  "description": "share prompting answers with other generators",
+  "author": "dan entous",
+  "main": "src/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan-nl/yeoman-prompting-helpers.git"
+  },
+  "keywords": [
+    "helpers",
+    "yeoman",
+    "yeoman helpers",
+    "yeoman prompting"
+  ],
+  "bugs": {
+    "url": "https://github.com/dan-nl/yeoman-prompting-helpers/issues"
+  },
+  "homepage": "https://github.com/dan-nl/yeoman-prompting-helpers#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash.filter": "4.6.0",
+    "lodash.foreach": "4.5.0"
+  }
+}
