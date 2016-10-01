@@ -1,11 +1,13 @@
 {
   "name": "yeoman-prompting-helpers",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "share prompting answers with other generators",
   "author": "dan entous",
   "main": "src/index.js",
   "license": "MIT",
-  "files": [ "src" ],
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dan-nl/yeoman-prompting-helpers.git"
