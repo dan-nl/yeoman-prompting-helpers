@@ -1,4 +1,4 @@
-# yeoman-prompting-helper
+# yeoman-prompting-helpers
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][david-dm-image]][david-dm-url] [![Dev Dependency Status][david-dm-dev-image]][david-dm-dev-url] [![NSP Status][nsp-image]][nsp-url]
 
 share prompting answers with other generators
@@ -63,16 +63,16 @@ this.options.PromptAnswers.get( 'prompt-key' )
 ## license
 [MIT License][mit-license]
 
-[coveralls-image]: https://coveralls.io/repos/github/dan-nl/yeoman-prompting-helper/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/dan-nl/yeoman-prompting-helper?branch=master
-[david-dm-image]: https://david-dm.org/dan-nl/yeoman-prompting-helper.svg
-[david-dm-url]: https://david-dm.org/dan-nl/yeoman-prompting-helper
-[david-dm-dev-image]: https://david-dm.org/dan-nl/yeoman-prompting-helper/dev-status.svg
-[david-dm-dev-url]: https://david-dm.org/dan-nl/yeoman-prompting-helper?type=dev
-[mit-license]: https://raw.githubusercontent.com/dan-nl/yeoman-prompting-helper/master/license.txt
-[npm-image]: https://img.shields.io/npm/v/yeoman-prompting-helper.svg
-[npm-url]: https://www.npmjs.com/package/yeoman-prompting-helper
+[coveralls-image]: https://coveralls.io/repos/github/dan-nl/yeoman-prompting-helpers/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/dan-nl/yeoman-prompting-helpers?branch=master
+[david-dm-image]: https://david-dm.org/dan-nl/yeoman-prompting-helpers.svg
+[david-dm-url]: https://david-dm.org/dan-nl/yeoman-prompting-helpers
+[david-dm-dev-image]: https://david-dm.org/dan-nl/yeoman-prompting-helpers/dev-status.svg
+[david-dm-dev-url]: https://david-dm.org/dan-nl/yeoman-prompting-helpers?type=dev
+[mit-license]: https://raw.githubusercontent.com/dan-nl/yeoman-prompting-helpers/master/license.txt
+[npm-image]: https://img.shields.io/npm/v/yeoman-prompting-helpers.svg
+[npm-url]: https://www.npmjs.com/package/yeoman-prompting-helpers
 [nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/49dfe596-0412-419d-8aaa-764e46cd9d7b/badge
 [nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/49dfe596-0412-419d-8aaa-764e46cd9d7b
-[travis-image]: https://travis-ci.org/dan-nl/yeoman-prompting-helper.svg?branch=master
-[travis-url]: https://travis-ci.org/dan-nl/yeoman-prompting-helper
+[travis-image]: https://travis-ci.org/dan-nl/yeoman-prompting-helpers.svg?branch=master
+[travis-url]: https://travis-ci.org/dan-nl/yeoman-prompting-helpers
