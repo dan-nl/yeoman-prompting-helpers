@@ -26,6 +26,7 @@
     "cover:browser": "npm test -- --coverage-report=lcov",
     "cover:cli": "npm test -- --cov",
     "cover:travis": "npm test -- --coverage-report=lcov --no-browser",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "eslint": "eslint .",
     "test": "tap test/**/*.test.js --reporter spec"
   },
@@ -36,6 +37,7 @@
     "lodash.foreach": "4.5.0"
   },
   "devDependencies": {
+    "coveralls": "2.11.14",
     "lodash.findindex": "4.6.0",
     "sinon": "1.17.6",
     "tap": "7.1.2"
