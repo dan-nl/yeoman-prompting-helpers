@@ -1,9 +1,11 @@
+/* eslint no-underscore-dangle: off */
+
 'use strict';
 
 /**
  * module dependencies
  */
-var createPromptAnswers = require( '../src/create-prompt-answers' );
+var _PromptAnswers = require( '../src/prompt-answers' );
 var filterPrompts = require( '../src/filter-prompts' );
 var findIndex = require( 'lodash.findindex' );
 var getGeneratorPrompts = require( './fixtures/get-generator-prompts' );
@@ -21,7 +23,7 @@ function findPromptIndex( prompt ) {
 
 test( 'filterPrompts( generator, getGeneratorPrompts )', function ( t ) {
   var prompts;
-  var PromptAnswers = createPromptAnswers();
+  var PromptAnswers = new _PromptAnswers();
 
   PromptAnswers.set( 'author', 'dan entous' );
   prompts = filterPrompts( PromptAnswers, getGeneratorPrompts() );

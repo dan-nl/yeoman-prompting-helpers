@@ -1,15 +1,17 @@
+/* eslint no-underscore-dangle: off */
+
 'use strict';
 
 /**
  * module dependencies
  */
-var createPromptAnswers = require( '../src/create-prompt-answers' );
+var _PromptAnswers = require( '../src/prompt-answers' );
 var addPromptAnswers = require( '../src/add-prompt-answers' );
 var answers = require( './fixtures/answers.json' );
 var test = require( 'tap' ).test;
 
 test( 'addPromptAnswers( PromptAnswers, answers )', function ( t ) {
-  var PromptAnswers = createPromptAnswers();
+  var PromptAnswers = new _PromptAnswers();
 
   addPromptAnswers( PromptAnswers, answers );
 

@@ -1,14 +1,16 @@
+/* eslint no-underscore-dangle: off */
+
 'use strict';
 
 /**
  * module dependencies
  */
 var answers = require( './fixtures/answers.json' );
-var createPromptAnswers = require( '../src/create-prompt-answers' );
+var _PromptAnswers = require( '../src/prompt-answers' );
 var test = require( 'tap' ).test;
 
 test( 'PromptAnswers()', function ( t ) {
-  var PromptAnswers = createPromptAnswers();
+  var PromptAnswers = new _PromptAnswers();
 
   t.same(
     PromptAnswers.set( 'author', 'dan entous' ),

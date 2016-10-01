@@ -1,9 +1,11 @@
+/* eslint no-underscore-dangle: off */
+
 'use strict';
 
 /**
  * module dependencies
  */
-var createPromptAnswers = require( '../src/create-prompt-answers' );
+var _PromptAnswers = require( '../src/prompt-answers' );
 var generator = require( './fixtures/generator.js' );
 var getGeneratorPrompts = require( './fixtures/get-generator-prompts' );
 var getGeneratorPromptsEmpty = require( './fixtures/get-generator-prompts-empty' );
@@ -18,7 +20,7 @@ var log = sinon.spy( generator, 'log' );
 var prompt = sinon.spy( generator, 'prompt' );
 
 test( 'promptingHelper( generator, getGeneratorPrompts ) 0 prompts', function ( t ) {
-  generator.options.PromptAnswers = createPromptAnswers();
+  generator.options.PromptAnswers = new _PromptAnswers();
   promptingHelper( generator, getGeneratorPromptsEmpty() );
 
   t.ok(
@@ -36,7 +38,7 @@ test( 'promptingHelper( generator, getGeneratorPrompts ) 0 prompts', function ( 
 } );
 
 test( 'promptingHelper( generator, getGeneratorPrompts ) 3 prompts', function ( t ) {
-  generator.options.PromptAnswers = createPromptAnswers();
+  generator.options.PromptAnswers = new _PromptAnswers();
   promptingHelper( generator, getGeneratorPrompts() );
 
   t.ok(
