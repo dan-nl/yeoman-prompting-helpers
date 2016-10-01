@@ -32,9 +32,9 @@ this.composeWith(
 ### initializing
 in the generator’s initializing method
 ```javascript
-var createPromptAnswers = require( 'yeoman-prompting-helpers' ).createPromptAnswers;
+var PromptAnswers = require( 'yeoman-prompting-helpers' ).PromptAnswers;
 
-this.options.PromptAnswers = createPromptAnswers( this.options.PromptAnswers );
+this.options.PromptAnswers = this.options.PromptAnswers || new PromptAnswers();
 ```
 
 ### prompting
