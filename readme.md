@@ -6,7 +6,7 @@ share prompting answers with other generators
 ## table of contents
 * [installation](#installation)
 * [use](#use)
-    * [composeWith](#composeWith)
+    * [composeWith](#composewith)
     * [initializing](#initializing)
     * [prompting](#prompting)
     * [using prompt answers](#using-prompt-answers)
