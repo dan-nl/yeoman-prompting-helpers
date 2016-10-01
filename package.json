@@ -5,6 +5,7 @@
   "author": "dan entous",
   "main": "src/index.js",
   "license": "MIT",
+  "files": [ "src" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dan-nl/yeoman-prompting-helpers.git"
@@ -33,6 +34,7 @@
     "lodash.foreach": "4.5.0"
   },
   "devDependencies": {
+    "lodash.findindex": "4.6.0",
     "sinon": "1.17.6",
     "tap": "7.1.2"
   }

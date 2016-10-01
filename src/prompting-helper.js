@@ -4,24 +4,25 @@
  * module dependencies
  */
 var addPromptAnswers = require( './add-prompt-answers' );
-var filterPrompts = require( './filter-prompts' );
 
 /**
- * sets up the prompts for a generator based on the result of filtering getModulePrompts to make
+ * sets up the prompts for a generator based on the result of filtering getGeneratorPrompts to make
  * sure a user is not presented with the same prompt.name more than once. after then prompts have
  * been answered, the answers are added to the shared generator.options.prompts object.
  *
  * @param {Object} generator
- * @param {Function} generator.log
- * @param {Object} generator.options
- * @param {Function} generator.prompt
- *
- * @param {Function} getModulePrompts
- *
+ * @param {Array} generator_prompts
  * @returns {Promise}
  */
-function promptingHelper( generator, getModulePrompts ) {
-  var prompts = filterPrompts( generator, getModulePrompts );
+var filterPrompts = require( './filter-prompts' );
+
+/**
+ * @param {Object} generator
+ * @param {Array} generator_prompts
+ * @returns {Promise}
+ */
+function promptingHelper( generator, generator_prompts ) {
+  var prompts = filterPrompts( generator.options.PromptAnswers, generator_prompts );
 
   if ( prompts.length < 1 ) {
     generator.log( 'no additional prompts needed for ' + generator.options.namespace );
@@ -32,7 +33,7 @@ function promptingHelper( generator, getModulePrompts ) {
   return generator.prompt( prompts )
     .then(
       function ( answers ) {
-        addPromptAnswers( generator, answers );
+        addPromptAnswers( generator.options.PromptAnswers, answers );
       }
     );
 }

@@ -6,15 +6,15 @@
 var forEach = require( 'lodash.foreach' );
 
 /**
- * @param {Object} generator
+ * @param {PromptAnswers} PromptAnswers
  * @param {Object} answers
- * @returns {void}
+ * @returns {undefined}
  */
-function addPromptAnswers( generator, answers ) {
+function addPromptAnswers( PromptAnswers, answers ) {
   forEach(
     answers,
     function iteratee( value, key ) {
-      generator.options.prompts.set( value, key );
+      PromptAnswers.set( key, value );
     }
   );
 }

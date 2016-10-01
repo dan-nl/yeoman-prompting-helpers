@@ -3,16 +3,13 @@
 /**
  * module dependencies
  */
-var addPromptAnswers = require( './add-prompt-answers' );
-var addPrompts = require( './add-prompts' );
-var filterPrompts = require( './filter-prompts' );
+var createPromptAnswers = require( './create-prompt-answers' );
 var promptingHelper = require( './prompting-helper' );
-var prompts = require( './prompts' );
 
+/**
+ * @type {{createPromptAnswers: createPromptAnswers, promptingHelper: promptingHelper}}
+ */
 module.exports = {
-  addPromptAnswers: addPromptAnswers,
-  addPrompts: addPrompts,
-  filterPrompts: filterPrompts,
-  promptingHelper: promptingHelper,
-  prompts: prompts
+  createPromptAnswers: createPromptAnswers,
+  promptingHelper: promptingHelper
 };

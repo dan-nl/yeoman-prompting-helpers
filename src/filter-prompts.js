@@ -6,19 +6,18 @@
 var filter = require( 'lodash.filter' );
 
 /**
- * filters prompts presented to the user based on prompts in generator.options.prompts.answers.
- * if a prompt.name already exists in answers that prompt will not be presented to the user again.
+ * if a prompt.name already exists in PromptAnswers.answers that prompt will not be returned in
+ * the resulting Array
  *
- * @param {Object} generator
- * @param {Function} getPrompts
- *
+ * @param {PromptAnswers} PromptAnswers
+ * @param {Array} generator_prompts
  * @returns {Array}
  */
-function filterPrompts( generator, getPrompts ) {
+function filterPrompts( PromptAnswers, generator_prompts ) {
   return filter(
-    getPrompts( generator ),
+    generator_prompts,
     function iteratee( prompt ) {
-      return typeof generator.options.prompts.get( prompt.name ) === 'undefined';
+      return typeof PromptAnswers.get( prompt.name ) === 'undefined';
     }
   );
 }
