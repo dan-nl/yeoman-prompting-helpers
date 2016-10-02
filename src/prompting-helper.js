@@ -4,19 +4,16 @@
  * module dependencies
  */
 var addPromptAnswers = require( './add-prompt-answers' );
-
-/**
- * sets up the prompts for a generator based on the result of filtering getGeneratorPrompts to make
- * sure a user is not presented with the same prompt.name more than once. after then prompts have
- * been answered, the answers are added to the shared generator.options.prompts object.
- *
- * @param {Object} generator
- * @param {Array} generator_prompts
- * @returns {Promise}
- */
 var filterPrompts = require( './filter-prompts' );
 
 /**
+ * filters prompts for a generator
+ *
+ * compares prompts in the provided generator_prompts with those in generator.options.PromptAnswers.
+ * if a prompt.name already exists in generator.options.PromptAnswers.answers, then it’s not
+ * presented again to the user. the generator can retrieve the previously answered prompt with
+ * generator.options.PromptAnswers.get( prompt.name )
+ *
  * @param {Object} generator
  * @param {Array} generator_prompts
  * @returns {Promise}
