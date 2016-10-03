@@ -21,12 +21,6 @@ var filterPrompts = require( './filter-prompts' );
 function promptingHelper( generator, generator_prompts ) {
   var prompts = filterPrompts( generator.options.PromptAnswers, generator_prompts );
 
-  if ( prompts.length < 1 ) {
-    generator.log( 'no additional prompts needed for ' + generator.options.namespace );
-  } else {
-    generator.log( 'prompting for ' + generator.options.namespace );
-  }
-
   return generator.prompt( prompts )
     .then(
       function ( answers ) {
