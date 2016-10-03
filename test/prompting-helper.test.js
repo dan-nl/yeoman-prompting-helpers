@@ -16,17 +16,11 @@ var test = require( 'tap' ).test;
 /**
  * module variables
  */
-var log = sinon.spy( generator, 'log' );
 var prompt = sinon.spy( generator, 'prompt' );
 
 test( 'promptingHelper( generator, getGeneratorPrompts ) 0 prompts', function ( t ) {
   generator.options.PromptAnswers = new _PromptAnswers();
   promptingHelper( generator, getGeneratorPromptsEmpty() );
-
-  t.ok(
-    log.calledWith( 'no additional prompts needed for test' ),
-    'should log no prompt message'
-  );
 
   t.equal(
     prompt.getCalls()[ 0 ].args[ 0 ].length,
@@ -40,11 +34,6 @@ test( 'promptingHelper( generator, getGeneratorPrompts ) 0 prompts', function ( 
 test( 'promptingHelper( generator, getGeneratorPrompts ) 3 prompts', function ( t ) {
   generator.options.PromptAnswers = new _PromptAnswers();
   promptingHelper( generator, getGeneratorPrompts() );
-
-  t.ok(
-    log.calledWith( 'prompting for test' ),
-    'should log prompting message'
-  );
 
   t.equal(
     prompt.getCalls()[ 1 ].args[ 0 ].length,
