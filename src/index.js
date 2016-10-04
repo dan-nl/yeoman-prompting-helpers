@@ -1,15 +1,11 @@
 'use strict';
 
 /**
- * module dependencies
+ * module variables
  */
-var PromptAnswers = require( './prompt-answers' );
-var promptingHelper = require( './prompting-helper' );
+var helpers = {};
 
-/**
- * @type {{createPromptAnswers: createPromptAnswers, promptingHelper: promptingHelper}}
- */
-module.exports = {
-  PromptAnswers: PromptAnswers,
-  promptingHelper: promptingHelper
-};
+helpers.PromptAnswers = require( './prompt-answers' );
+helpers.promptingHelper = require( './prompting-helper' );
+
+module.exports = helpers;
