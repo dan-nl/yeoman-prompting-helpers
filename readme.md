@@ -57,7 +57,7 @@ this.options.PromptAnswers.get( prompt.name )
 ```
 
 ## example project
-the [generator-node-module][generator-node-module-url] illustrates how to use these helpers
+[generator-node-module][generator-node-module-url] illustrates how to initially setup the helpers and [generator-license][generator-license-url] shows how to use the shared prompt answers 
 
 ## license
 [MIT License][mit-license]
@@ -68,7 +68,8 @@ the [generator-node-module][generator-node-module-url] illustrates how to use th
 [david-dm-url]: https://david-dm.org/dan-nl/yeoman-prompting-helpers
 [david-dm-dev-image]: https://david-dm.org/dan-nl/yeoman-prompting-helpers/dev-status.svg
 [david-dm-dev-url]: https://david-dm.org/dan-nl/yeoman-prompting-helpers?type=dev
-[generator-node-module-url]: https://github.com/dan-nl/generator-node-module/blob/master/app/initializing.js#L15
+[generator-license-url]: https://github.com/dan-nl/generator-license/blob/master/app/writing.js#L17
+[generator-node-module-url]: https://github.com/dan-nl/generator-node-module/blob/master/app/initializing.js#L8
 [mit-license]: https://raw.githubusercontent.com/dan-nl/yeoman-prompting-helpers/master/license.txt
 [npm-image]: https://img.shields.io/npm/v/yeoman-prompting-helpers.svg
 [npm-url]: https://www.npmjs.com/package/yeoman-prompting-helpers
